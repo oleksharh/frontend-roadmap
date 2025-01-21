@@ -12,53 +12,47 @@
             align-items: center;
             height: 100vh;
         }
-        .block1 {
+        ul {
+            display: flex;
             border: solid black 5px;
             background-color: orangered;
             height: 95vh;
             width: 95vw;
-            display: flex;
-            flex-direction: column;
-        }
-        .block1 div {
-            height: 15%;
-            width: 100%;
-        }
-        ul {
-            display: flex;
-            width: 100%;
             padding: 0;
             margin: 0;
-            height: 70%;
+            flex-wrap: wrap;
             list-style-type: none;
         }
-        li {
-            flex: 1;
-            height: 100%;
+        li:nth-child(1), li:nth-child(6) {
+            width: 100%;
+            height: 15%;
         }
-        li:nth-child(1) {
-            background-color: red;
+        li:nth-child(2), li:nth-child(3), li:nth-child(4), li:nth-child(5) {
+            width: 25%;
+            height: 70%;
         }
         li:nth-child(2) {
-            background-color: green;
+            background-color: red;
         }
         li:nth-child(3) {
-            background-color: cyan;
+            background-color: green;
         }
         li:nth-child(4) {
+            background-color: cyan;
+        }
+        li:nth-child(5) {
             background-color: black;
         }
     </style>
 </head>
 <body>
-    <div class="block1">
-        <div></div>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 </body>
 </html>
