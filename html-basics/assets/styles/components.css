@@ -1,0 +1,13 @@
+@import 'components/navbar.css';
+@import 'components/intro-heading.css';
+@import 'components/footer.css';
+@import 'components/sections/about.css';
+
+@import 'variables.css';
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: var(--highlight-color);
+    border-radius: 1px;
+}

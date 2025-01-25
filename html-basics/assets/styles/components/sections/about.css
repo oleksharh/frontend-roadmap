@@ -1,0 +1,17 @@
+.about-content {
+    grid-template-columns: repeat(8, 1fr);
+    display: grid;
+}
+
+
+.about-content h4 {
+    grid-column: 1 / span 4;
+    width: 100%;
+    height: 100%;
+}
+
+.about-content p {
+    grid-column: 5 / span 4;
+    width: 100%;
+    height: 100%;
+}

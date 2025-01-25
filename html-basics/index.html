@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - oleksandr Sharhorodskyi</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
-    <title>Portfolio - oleksandr Sharhorodskyi</title>
-
+    <script>
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    </script>
 </head>
 
 <body>
@@ -15,37 +18,69 @@
     <header>
         <nav>
             <div class="right-nav-buttons">
-                <button class="nav-button" onclick="scrollToSection('about')">ABOUT</button>
-                <button class="nav-button" onclick="scrollToSection('experience')">EXPERIENCE</button>
-                <button class="nav-button" onclick="scrollToSection('project')">PROJECTS</button>
-                <button class="nav-button" onclick="scrollToSection('contact')">CONTACT</button>
+                <button class="nav-button" onclick="scrollToSection('about-section')">ABOUT</button>
+                <span>/</span>
+                <button class="nav-button" onclick="scrollToSection('experience-section')">EXPERIENCE</button>
+                <span>/</span>
+                <button class="nav-button" onclick="scrollToSection('projects-section')">PROJECTS</button>
+                <span>/</span>
+                <button class="nav-button" onclick="scrollToSection('contact-section')">CONTACT</button>
+                <span>/</span>
+                <button class="nav-button" id="theme-toggle">Toggle Dark/Light Mode</button>
             </div>
         </nav>
 
     </header>
 
-    <h1>
-        <span class="first-name">OLEKSANDR</span>
-        <span class="last-name">SHARHORODSKYI</span>
-    </h1>
+    <div class="intro-heading">
+        <h1>
+            <span class="first-name">OLEKSANDR</span>
+            <span class="last-name">SHARHORODSKYI</span>
+        </h1>
+        <h2>
+            A second year Computer Science student <br>
+            at the University of Hertfordshire
+        </h2>
+    </div>
 
     <main>
-        <div id="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, sequi.</div>
-        <div id="experience">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, sequi.</div>
-        <div id="project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, sequi.</div>
-        <div id="contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, sequi.</div>
+        <div id="about-section">
+            <h3>ABOUT</h3>
+            <hr>
+            <div class="about-content">
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam similique fugiat veritatis quia
+                    quis ea, earum natus non quo facilis corporis maxime inventore est modi deleniti sequi iusto
+                    voluptatibus, atque in sapiente qui rem reprehenderit? Numquam excepturi nisi iusto ea natus,
+                    reprehenderit fugiat? Rerum, sed suscipit! Perspiciatis provident iste labore.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, pariatur voluptas alias iusto
+                    delectus officia, exercitationem officiis aut praesentium esse adipisci expedita! Modi suscipit quos
+                    recusandae voluptatem nisi. Molestias nobis deleniti rerum expedita inventore, ratione harum est
+                    sint doloremque vitae enim quia eligendi beatae vero, possimus optio necessitatibus porro eaque?</p>
+            </div>
+        </div>
+
+        <div id="experience-section">
+            <h3>EXPERIENCE</h3>
+            <hr>
+        </div>
+
+        <div id="projects-section">
+            <h3>PROJECTS</h3>
+            <hr>
+        </div>
     </main>
 
-    <footer>
+    <footer id="contact-section">
         <p class="copyright">© OLEKSHARH 2024</p>
         <div class="contact-links">
-            <a href="https://www.linkedin.com/in/oleksharh" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/oleksharh" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/oleksharh" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+            <span>/</span>
+            <a href="https://github.com/oleksharh" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            <span>/</span>
             <a href="mailto:oleksharh@gmail.com?subject=General+Inquiry&body=Hi%20Oleksandr,%0A%0A"
-                rel="noopener noreferrer">Contact</a>
+                rel="noopener noreferrer">CONTACT</a>
         </div>
     </footer>
-    </div>
 
     <script src="assets/scripts/main.js"></script>
 

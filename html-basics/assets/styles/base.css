@@ -1,0 +1,14 @@
+@import 'variables.css';
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    padding-left: 15%;
+    padding-right: 15%;
+}

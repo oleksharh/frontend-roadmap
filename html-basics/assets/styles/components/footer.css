@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-weight: 1000;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-links a{
+    text-decoration: none;
+    color: inherit;
+}
