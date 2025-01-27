@@ -13,3 +13,15 @@ toggleButton.addEventListener('click', () => {
 
   localStorage.setItem('theme', newTheme);
 });
+
+addEventListener('resize', () => {
+  console.log(window.innerWidth);
+  console.log(window.innerHeight);
+});
+
+let headingDiv = document.getElementById('intro-heading');
+
+addEventListener('resize', () => {
+  console.log(headingDiv.innerWidth);
+  console.log(headingDiv.innerHeight);
+});
