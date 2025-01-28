@@ -7,10 +7,6 @@
     <title>Portfolio - oleksandr Sharhorodskyi</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
-    <script>
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', currentTheme);
-    </script>
 
     <meta property="og:title" content="Oleksandr Sharhorodskyi - Portfolio">
     <meta property="og:type" content="website">
@@ -22,25 +18,40 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://oleksharh.github.io/frontend-roadmap/html-basics/">
+
+    <script>
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    </script>
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <div class="right-nav-buttons">
-                <button class="nav-button" onclick="scrollToSection('about-section')">ABOUT</button>
+        <nav id="main-nav" class="main-nav">
+            <div class="main-nav-links">
+                <button onclick="scrollToSection('about-section')">ABOUT</button>
                 <span>/</span>
-                <button class="nav-button" onclick="scrollToSection('experience-section')">EXPERIENCE</button>
+                <button onclick="scrollToSection('experience-section')">EXPERIENCE</button>
                 <span>/</span>
-                <button class="nav-button" onclick="scrollToSection('projects-section')">PROJECTS</button>
+                <button  onclick="scrollToSection('projects-section')">PROJECTS</button>
                 <span>/</span>
-                <button class="nav-button" onclick="scrollToSection('contact-section')">CONTACT</button>
+                <button onclick="scrollToSection('contact-section')">CONTACT</button>
                 <span>/</span>
-                <button class="nav-button" id="theme-toggle">Toggle Dark/Light Mode</button>
+                <button class="theme-toggle">Toggle Dark/Light Mode</button>
             </div>
         </nav>
+        <nav id="mobile-nav" class="mobile-nav">
+            <button id="menu-toggler">MENU</button>
+            <div id="mobile-nav-links" class="mobile-nav-links">
+                <button onclick="scrollToSection('about-section')">ABOUT</button>
+                <button onclick="scrollToSection('experience-section')">EXPERIENCE</button>
+                <button onclick="scrollToSection('projects-section')">PROJECTS</button>
+                <button onclick="scrollToSection('contact-section')">CONTACT</button>
+                <button class="theme-toggle">Toggle Dark/Light Mode</button>
+            </div>
 
+        </nav>
     </header>
 
     <main class="main-content">

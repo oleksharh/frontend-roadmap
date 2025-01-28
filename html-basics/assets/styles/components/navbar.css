@@ -8,7 +8,7 @@ nav {
     justify-content: flex-end;
 }
 
-.nav-button {
+.main-nav-links button, .mobile-nav button {
     margin: 0 0.5rem;
     background: none;
     border: none;
@@ -16,4 +16,42 @@ nav {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+}
+
+.main-nav.hidden{
+    display: none;
+}
+
+.mobile-nav{
+    display: none;
+    flex-direction: column;
+}
+
+.mobile-nav.active {
+    /* position: absolute; */
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-nav.active, .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav-links {
+    display: none;
+}
+
+.mobile-nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mobile-nav #menu-toggler {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
