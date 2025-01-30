@@ -7,6 +7,7 @@
     --small-font-size: 14px;
     --medium-font-size: 20px;
     --large-font-size: 30px;
+    --extra-large-font-size: 40px;
 }
 
 [data-theme="dark"] {
@@ -20,15 +21,17 @@
 @media (max-width: 575px) {
     :root {
         --small-font-size: 10px;
-        --medium-font-size: 15px;
-        --large-font-size: 20px;
+        --medium-font-size: 17px;
+        --large-font-size: 23px;
+        --extra-large-font-size: 30px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
     :root {
         --small-font-size: 12px;
-        --medium-font-size: 17px;
-        --large-font-size: 25px;
+        --medium-font-size: 18px;
+        --large-font-size: 27px;
+        --extra-large-font-size: 36px;
     }
 }

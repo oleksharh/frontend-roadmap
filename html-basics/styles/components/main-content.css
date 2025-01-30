@@ -1,5 +1,34 @@
+@import '../variables.css';
+
 .main-content {
     display: flex;
     flex-direction: column;
     row-gap: 5rem;
+}
+
+.main-content > article > h3 {
+    font-size: var(--extra-large-font-size);
+}
+
+.about-content,
+.projects-content,
+.experience-content {
+    grid-template-columns: repeat(8, 1fr);
+    display: grid;
+}
+
+.about-content h4,
+.projects-content h4,
+.experience-content h4 {
+    grid-column: 1 / span 5;
+    width: 100%;
+    height: 100%;
+}
+
+.about-content p,
+.projects-content p,
+.experience-content p {
+    grid-column: 6 / span 3;
+    width: 100%;
+    height: 100%;
 }
