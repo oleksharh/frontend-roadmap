@@ -13,13 +13,15 @@ body {
     font-size: 16px;
     color: var(--primary-color);
     background-color: var(--background-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 20%;
     padding-right: 20%;
 }
 
 @media (max-width: 575px) {
     body {
-        padding: 10px;
+        padding: 15px;
     }
 }
 
@@ -44,6 +46,4 @@ body {
     }
 }
 
-/* TODO: Add adaptive design for mobile devices. (padding of the body, navbar, footer, intro-heading, about section) */
-/* TODO: Add adaptive design, changing navbar into three lined menu or menu just as plain text and opening it would have nav buttons itself */
 /* TODO: Add Grid layouts for sections and add appropriate data into them */

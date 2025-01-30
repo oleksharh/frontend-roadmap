@@ -10,11 +10,11 @@
     position: relative;
 }
 
-h1 {
+.name {
     grid-column: span 8;
 }
 
-h1, h1 > span{
+.name, .name > span{
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
@@ -22,7 +22,7 @@ h1, h1 > span{
     font-size: clamp(2rem, 6.5vw, 10rem);
 }
 
-h2 {
+.description {
     margin: 0;
     flex-wrap: wrap;
     color: var(--secondary-color);
@@ -31,32 +31,35 @@ h2 {
     left: 0;
     bottom: 0;
     margin-block-start: 10rem;
+    font-size: var(--large-font-size);
 }
 
 @media (max-width: 575px) {
-    h2 {
-        font-size: 1rem;
+    .description {
         grid-column: 1/span 8;
     }
 
-    h1 > span{
+    .name > span{
         font-size: 10vw;
+    }
+    
+    .intro-heading {
+        height: calc(100svh - 70px);
     }
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
-    h2 {
-        font-size: 1.2rem;
+    .description {
         grid-column: 1/span 6;
     }
 
-    h1 > span{
+    .name > span{
         font-size: 8vw;
     }
 }
 
 @media (min-width: 991px) and (max-width: 2200px) {
-    h2 {
+    .description {
         font-size: 1.5rem;
         grid-column: 1/span 6;
     }
@@ -70,5 +73,6 @@ h2 {
 @media (max-width: 1000px) and (max-height: 1000px) {
     .intro-heading {
         min-height: 500px;
+        height: calc(100svh - 70px);
     }
 }

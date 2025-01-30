@@ -4,6 +4,9 @@
     --secondary-color: #858585;
     --border-color: #cecece;
     --highlight-color: #cecece;
+    --small-font-size: 14px;
+    --medium-font-size: 20px;
+    --large-font-size: 30px;
 }
 
 [data-theme="dark"] {
@@ -12,4 +15,20 @@
     --secondary-color: #d1d1d1;
     --border-color: #444444;
     --highlight-color: #555555;
+}
+
+@media (max-width: 575px) {
+    :root {
+        --small-font-size: 10px;
+        --medium-font-size: 15px;
+        --large-font-size: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    :root {
+        --small-font-size: 12px;
+        --medium-font-size: 17px;
+        --large-font-size: 25px;
+    }
 }

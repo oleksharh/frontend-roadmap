@@ -1,6 +1,6 @@
 @import '../variables.css';
 
-nav {
+.main-nav, .mobile-nav {
     display: flex;
     color: var(--primary-color);
     font-weight: 1000;
@@ -8,7 +8,9 @@ nav {
     justify-content: flex-end;
 }
 
-button {
+.main-nav-links > button,
+.mobile-nav-links > button,
+.mobile-nav > button {
     margin: 0 0.5rem;
     background: none;
     border: none;
@@ -16,6 +18,7 @@ button {
     font: inherit;
     cursor: pointer;
     outline: none;
+    font-size: var(--medium-font-size);
 }
 
 .main-nav.hidden, .mobile-nav-links {

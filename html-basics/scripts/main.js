@@ -19,7 +19,7 @@ toggleButtons.forEach(button => {
 
 
 addEventListener('resize', () => {
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 1250) {
     document.getElementById('mobile-nav').classList.add('active');
     document.getElementById('main-nav').classList.add('hidden');
   } else {
@@ -29,7 +29,7 @@ addEventListener('resize', () => {
 });
 
 addEventListener('load', () => {
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 1250) {
     document.getElementById('mobile-nav').classList.add('active');
     document.getElementById('main-nav').classList.add('hidden');
   } else {
