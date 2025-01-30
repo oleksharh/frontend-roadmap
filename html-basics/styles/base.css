@@ -2,6 +2,10 @@
 
 * {
     transition: background-color 0.3s ease, color 0.3s ease;
+    overscroll-behavior: none; /* Disables bounciness effect / not sure if it works (hint from chatGPT) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
