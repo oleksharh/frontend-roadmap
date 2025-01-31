@@ -1,5 +1,47 @@
 @import '../variables.css';
 
+.about-content {
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(8, 1fr);
+    display: grid;
+}
+
+@media (max-width: 768px) {
+    .about-content,
+    .about-links,
+    .about-content h4,
+    .about-content p {
+        grid-template-columns: none;
+        grid-template-rows: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
 .about-content h4 {
     font-size: var(--large-font-size);
+    font-weight: 500;
+    grid-row: 1/span 1;
+}
+
+.about-content p {
+    grid-row: 1/span 2;
+}
+
+.about-links {
+    display: flex;
+    gap: 3rem;
+    flex-direction: row;
+    grid-column: 1/span 4;
+    align-items: end;
+}
+
+.about-links a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    white-space: nowrap;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
 }

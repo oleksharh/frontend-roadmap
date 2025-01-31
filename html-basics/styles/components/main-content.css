@@ -10,12 +10,11 @@
     font-size: var(--extra-large-font-size);
 }
 
-.about-content,
+/* .about-content,
 .projects-content,
 .experience-content {
-    grid-template-columns: repeat(8, 1fr);
-    display: grid;
-}
+    
+} */
 
 .about-content h4,
 .projects-content h4,

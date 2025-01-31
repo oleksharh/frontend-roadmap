@@ -70,7 +70,7 @@
     white-space: nowrap;
 }
 
-@media (max-width: 1000px) and (max-height: 1000px) {
+@media (max-width: 1000px) or (max-height: 1000px) {
     .intro-heading {
         min-height: 500px;
         height: calc(100svh - 70px);
